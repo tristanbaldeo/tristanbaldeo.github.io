@@ -1,0 +1,117 @@
+body {
+    background: #1C1C1C;
+  }
+
+h1 {
+    font-family: IBM Plex Mono;
+    font-weight: 500;
+    font-size: 96px;
+    margin-bottom: 32px;
+    margin-left: 2px;
+    color: #EBEBEB;
+}
+
+h2 {
+    font-family: IBM Plex Mono;
+    font-weight: 400;
+    font-size: 30px;
+    margin-left: 18px;
+    text-decoration: underline solid #EBEBEB 3px;
+    text-underline-offset: 8px;
+    color: #EBEBEB;
+}
+
+p {
+    font-family: IBM Plex Mono;
+    font-weight: 300;
+    font-size: 22px;
+    margin-left: 18px;
+    color: #EBEBEB;
+}
+
+u {
+    text-underline-offset: 5px;
+}
+
+.navbar {
+    background-color: #222222;
+    position: relative;
+    max-width: 431px;
+    justify-content: right;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+.navbar a {
+    font-family: IBM Plex Mono;
+    font-weight: 300;
+    font-size: 18px;
+    float: right;
+    color: #EBEBEB;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #EBEBEB;
+    color: #1C1C1C
+}
+
+a:link {
+    color: #EBEBEB;
+}
+
+a:visited {
+    color: #EBEBEB;
+}
+
+a:hover {
+    color: #dddddd;
+}
+
+.collapsible {
+    font-family: IBM Plex Mono;
+    display: inline-block;
+    background-color: #1C1C1C;
+    cursor: pointer;
+    border: none;
+    border-width: 0px;
+    outline: none;
+    font-weight: 400;
+    font-size: 30px;
+    margin-left: 15px;
+    text-decoration: underline solid #EBEBEB 3px;
+    text-underline-offset: 8px;
+    color: #EBEBEB;
+}
+
+.collapsible:hover {
+    color: #dddddd;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.0s ease-in-out;
+  }
+  
+  /* Style for the checkbox */
+  .toggle {
+    display: none;
+  }
+  
+  /* Style for the label, to make it look like a button */
+  
+  /* Style for the label when the checkbox is checked */
+  .toggle:checked ~ .content {
+    max-height: 550px; /* Adjust this value based on your content */
+  }
+
+img {
+    width: 500px;
+    height: auto;
+    border: 5px solid #EBEBEB;
+    margin-left: 15px;
+    margin-top: 25px;
+}

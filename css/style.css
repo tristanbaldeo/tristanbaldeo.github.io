@@ -94,19 +94,20 @@ a:hover {
     max-height: 0;
     overflow: hidden;
     transition: max-height 1.0s ease-in-out;
-  }
-  
+}
+
   /* Style for the checkbox */
-  .toggle {
+.toggle {
     display: none;
-  }
-  
+}
+
   /* Style for the label, to make it look like a button */
-  
+
   /* Style for the label when the checkbox is checked */
-  .toggle:checked ~ .content {
+.toggle:checked + .content {
     max-height: 550px; /* Adjust this value based on your content */
-  }
+}
+
 
 img {
     width: 500px;

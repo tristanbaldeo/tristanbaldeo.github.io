@@ -1,6 +1,6 @@
 body {
     background: #1C1C1C;
-  }
+}
 
 h1 {
     font-family: IBM Plex Mono;
@@ -96,16 +96,12 @@ a:hover {
     transition: max-height 1.0s ease-in-out;
 }
 
-  /* Style for the checkbox */
 .toggle {
     display: none;
 }
 
-  /* Style for the label, to make it look like a button */
-
-  /* Style for the label when the checkbox is checked */
 .toggle:checked + .content {
-    max-height: 550px; /* Adjust this value based on your content */
+    max-height: 550px;
 }
 
 
@@ -115,4 +111,23 @@ img {
     border: 5px solid #EBEBEB;
     margin-left: 15px;
     margin-top: 25px;
+}
+
+.blinking-cursor {
+    font-weight: 100;
+    font-size: 96px;
+    margin-left: -10px;
+    color: #EBEBEB;
+    -webkit-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from, to { color: transparent }
+    50% { color: #EBEBEB }
+}
+
+@-webkit-keyframes blink {
+    from, to { color: transparent }
+    50% { color: #EBEBEB }
 }
